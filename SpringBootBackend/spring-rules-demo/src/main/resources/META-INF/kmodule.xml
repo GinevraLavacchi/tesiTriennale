@@ -1,0 +1,5 @@
+<kmodule xmlns="http://www.drools.org/xsd/kmodule">
+    <kbase name="gameKBase">
+        <ksession name="rulesSession" default="true"/>
+    </kbase>
+</kmodule>

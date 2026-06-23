@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ColliderEsterno
+  - ColliderInterno
+  - EnterTrigger
+  - ExitTrigger
+  - Tree
+  - DarkTree
+  - Desk
+  - Field
+  - Tool
+  - objWorkBench
+  - Chest
+  - GameManager
+  - SlimeHitBox
+  - Slime
+  - Rope
+  - StoneHitBox
+  - Hole
+  - ChestUI
+  - SceneTransition
+  - TimeManager
+  - BackTool
+  - CounterCanvas
+  - CloseButton
+  - InventoryCanvas
+  - Water
+  - Wheat
+  - Tomato
+  - EnterScene
+  - Sun
+  - AudioManager
+  - TimeCanvas
+  - SampleSceneCanvas
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Tree
+  - Desk
+  - Chest
+  - Wheat
+  - SlimeBall
+  - Tomato
+  - Player
+  - SlimeHitBox
+  - StoneHItBox
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 3209547673
+    locked: 0
+  - name: SecondGround
+    uniqueID: 1450331953
+    locked: 0
+  - name: WalkInFront
+    uniqueID: 248955511
+    locked: 0
+  - name: HouseUpWall
+    uniqueID: 2306892663
+    locked: 0
+  - name: HouseDownWall1
+    uniqueID: 2740533071
+    locked: 0
+  - name: Field
+    uniqueID: 1684983977
+    locked: 0
+  - name: Collision
+    uniqueID: 4238379465
+    locked: 0
+  - name: Decor
+    uniqueID: 858335463
+    locked: 0
+  - name: Door
+    uniqueID: 3975731443
+    locked: 0
+  - name: Player
+    uniqueID: 1280696927
+    locked: 0
+  - name: GlowFLower
+    uniqueID: 3655152767
+    locked: 0
+  - name: HouseDownWall
+    uniqueID: 219943007
+    locked: 0
+  - name: HouseUpWall1
+    uniqueID: 1523405535
+    locked: 0
+  - name: WalkBehind
+    uniqueID: 2834008435
+    locked: 0
+  - name: Roof
+    uniqueID: 2787275575
+    locked: 0
+  - name: TreeCollider
+    uniqueID: 1051344195
+    locked: 0
+  - name: Tree
+    uniqueID: 1956858945
+    locked: 0
+  - name: BorderForest
+    uniqueID: 1608352861
+    locked: 0
+  - name: BorderForest1
+    uniqueID: 3400792405
+    locked: 0
+  - name: Apple
+    uniqueID: 922349761
+    locked: 0
+  - name: Wood
+    uniqueID: 3719640877
+    locked: 0
+  - name: WheatDrop
+    uniqueID: 2708984961
+    locked: 0
+  - name: TomatoDrop
+    uniqueID: 1708419911
+    locked: 0
+  - name: SlimeDrop
+    uniqueID: 2827262069
+    locked: 0
+  - name: Fertilizer
+    uniqueID: 2806482679
+    locked: 0
+  - name: TreeHarvest
+    uniqueID: 3100847605
+    locked: 0
+  - name: DarkTree
+    uniqueID: 3066237839
+    locked: 0
+  - name: ItemHarvest
+    uniqueID: 592973059
+    locked: 0
+  - name: Test
+    uniqueID: 235692995
+    locked: 0

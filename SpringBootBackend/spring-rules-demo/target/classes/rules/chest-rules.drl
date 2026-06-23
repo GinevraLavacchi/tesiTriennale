@@ -1,0 +1,133 @@
+package rules
+
+import it.tesi.app.model.GameContext;
+import it.tesi.app.dto.InventoryItemDto;
+
+// =====================
+// RIPARAZIONE STRUMENTI
+// Qui recipeName è specifico: axe, pickaxe, sword, hoe
+// =====================
+
+rule "Repair axe"
+when
+    $ctx : GameContext(targetType == "workbench", recipeName == "axe")
+    InventoryItemDto(type == "Iron", count >= 3)
+    InventoryItemDto(type == "Copper", count >= 3)
+    InventoryItemDto(type == "Wood", count >= 4)
+then
+    $ctx.setAllowed(true);
+    $ctx.setAction("repair_tool");
+    $ctx.setResultItem("axe");
+    $ctx.setResultCount(1);
+    $ctx.setMessage("Ascia riparata");
+end
+
+rule "Repair pickaxe"
+when
+    $ctx : GameContext(targetType == "workbench", recipeName == "pickaxe")
+    InventoryItemDto(type == "Iron", count >= 2)
+    InventoryItemDto(type == "Copper", count >= 3)
+    InventoryItemDto(type == "Wood", count >= 4)
+then
+    $ctx.setAllowed(true);
+    $ctx.setAction("repair_tool");
+    $ctx.setResultItem("pickaxe");
+    $ctx.setResultCount(1);
+    $ctx.setMessage("Piccone riparato");
+end
+
+rule "Repair sword"
+when
+    $ctx : GameContext(targetType == "workbench", recipeName == "sword")
+    InventoryItemDto(type == "Iron", count >= 5)
+    InventoryItemDto(type == "Copper", count >= 1)
+    InventoryItemDto(type == "Wood", count >= 3)
+then
+    $ctx.setAllowed(true);
+    $ctx.setAction("repair_tool");
+    $ctx.setResultItem("sword");
+    $ctx.setResultCount(1);
+    $ctx.setMessage("Spada riparata");
+end
+
+rule "Repair hoe"
+when
+    $ctx : GameContext(targetType == "workbench", recipeName == "hoe")
+    InventoryItemDto(type == "Iron", count >= 1)
+    InventoryItemDto(type == "Copper", count >= 3)
+    InventoryItemDto(type == "Wood", count >= 2)
+then
+    $ctx.setAllowed(true);
+    $ctx.setAction("repair_tool");
+    $ctx.setResultItem("hoe");
+    $ctx.setResultCount(1);
+    $ctx.setMessage("Zappa riparata");
+end
+
+
+// =====================
+// CREAZIONE OGGETTI
+// Qui recipeName è sempre "create"
+// Quantità esatte per evitare collisioni
+// =====================
+
+rule "Create wheat fertilizer"
+when
+    $ctx : GameContext(targetType == "workbench", recipeName == "create", ingredients.size == 1)
+    InventoryItemDto(type == "SlimeDrop", count == 4)
+then
+    $ctx.setAllowed(true);
+    $ctx.setAction("craft");
+    $ctx.setResultItem("wheatFertilizer");
+    $ctx.setResultCount(1);
+    $ctx.setMessage("Creato fertilizzante per grano");
+end
+
+rule "Create tomato fertilizer"
+when
+    $ctx : GameContext(targetType == "workbench", recipeName == "create", ingredients.size == 2)
+    InventoryItemDto(type == "SlimeDrop", count == 6)
+    InventoryItemDto(type == "Apple", count == 2)
+then
+    $ctx.setAllowed(true);
+    $ctx.setAction("craft");
+    $ctx.setResultItem("tomatoFertilizer");
+    $ctx.setResultCount(1);
+    $ctx.setMessage("Creato fertilizzante per pomodoro");
+end
+
+rule "Create bread"
+when
+    $ctx : GameContext(targetType == "workbench", recipeName == "create", ingredients.size == 1)
+    InventoryItemDto(type == "WheatDrop", count == 3)
+then
+    $ctx.setAllowed(true);
+    $ctx.setAction("craft");
+    $ctx.setResultItem("bread");
+    $ctx.setResultCount(1);
+    $ctx.setMessage("Creato pane");
+end
+
+rule "Create wheat seed"
+when
+    $ctx : GameContext(targetType == "workbench", recipeName == "create", ingredients.size == 1)
+    InventoryItemDto(type == "WheatDrop", count == 1)
+then
+    $ctx.setAllowed(true);
+    $ctx.setAction("craft");
+    $ctx.setResultItem("wheatSeed");
+    $ctx.setResultCount(3);
+    $ctx.setMessage("Creati semi di grano");
+end
+
+rule "Create tomato seed"
+when
+    $ctx : GameContext(targetType == "workbench", recipeName == "create", ingredients.size == 1)
+    InventoryItemDto(type == "TomatoDrop", count == 1)
+then
+    $ctx.setAllowed(true);
+    $ctx.setAction("craft");
+    $ctx.setResultItem("tomatoSeed");
+    $ctx.setResultCount(3);
+    $ctx.setMessage("Creati semi di pomodoro");
+end

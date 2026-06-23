@@ -1,0 +1,7 @@
+it\tesi\app\dto\InventoryItemDto.class
+it\tesi\app\rules\RuleService.class
+it\tesi\app\api\RuleResource.class
+it\tesi\app\dto\RuleRequest.class
+it\tesi\app\dto\RuleResponse.class
+it\tesi\app\config\DroolsProducer.class
+it\tesi\app\model\GameContext.class

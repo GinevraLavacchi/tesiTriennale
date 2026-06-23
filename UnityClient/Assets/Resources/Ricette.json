@@ -1,0 +1,121 @@
+{
+    "ricette": [
+        {
+            "nome": "axe",
+            "ingredienti": [
+                {
+                    "nome": "Iron",
+                    "quantita": 3
+                },
+                {
+                    "nome": "Copper",
+                    "quantita": 3
+                },
+                {
+                    "nome": "Wood",
+                    "quantita": 4
+                }
+            ]
+        },
+        {
+            "nome": "pickaxe",
+            "ingredienti": [
+                {
+                    "nome": "Iron",
+                    "quantita": 2
+                },
+                {
+                    "nome": "Copper",
+                    "quantita": 3
+                },
+                {
+                    "nome": "Wood",
+                    "quantita": 4
+                }
+            ]
+        },
+        {
+            "nome": "sword",
+            "ingredienti": [
+                {
+                    "nome": "Iron",
+                    "quantita": 5
+                },
+                {
+                    "nome": "Copper",
+                    "quantita": 1
+                },
+                {
+                    "nome": "Wood",
+                    "quantita": 3
+                }
+            ]
+        },
+        {
+            "nome": "hoe",
+            "ingredienti": [
+                {
+                    "nome": "Iron",
+                    "quantita": 1
+                },
+                {
+                    "nome": "Copper",
+                    "quantita": 3
+                },
+                {
+                    "nome": "Wood",
+                    "quantita": 2
+                }
+            ]
+        },
+        {
+            "nome": "wheatFertilizer",
+            "ingredienti": [
+                {
+                    "nome": "SlimeDrop",
+                    "quantita": 4
+                }
+            ]
+        },
+        {
+            "nome": "tomatoFertilizer",
+            "ingredienti": [
+                {
+                    "nome": "SlimeDrop",
+                    "quantita": 6
+                },
+                {
+                    "nome": "Apple",
+                    "quantita": 2
+                }
+            ]
+        },
+        {
+            "nome": "bread",
+            "ingredienti": [
+                {
+                    "nome": "WheatDrop",
+                    "quantita": 3
+                }
+            ]
+        },
+        {
+            "nome": "wheatSeed",
+            "ingredienti": [
+                {
+                    "nome": "WheatDrop",
+                    "quantita": 1
+                }
+            ]
+        },
+        {
+            "nome": "tomatoSeed",
+            "ingredienti": [
+                {
+                    "nome": "TomatoDrop",
+                    "quantita": 1
+                }
+            ]
+        }
+    ]
+}
