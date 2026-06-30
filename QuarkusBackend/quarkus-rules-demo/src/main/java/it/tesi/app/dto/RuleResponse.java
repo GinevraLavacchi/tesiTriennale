@@ -13,7 +13,7 @@ public class RuleResponse {
     public RuleResponse(boolean allowed, String action, String message, String resultItem, int resultCount) {
         this.allowed = allowed;
         this.action = action;
-        this.message = "Spring: " + message;
+        this.message = "Quarkus: " + message;
         this.resultItem = resultItem;
         this.resultCount = resultCount;
     }
